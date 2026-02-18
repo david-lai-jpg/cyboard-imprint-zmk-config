@@ -168,7 +168,7 @@
 &kp LCTRL &kp Z          &kp X          &kp C          &kp V           &kp B               &kp N   &kp M           &kp COMMA      &kp DOT        &kp FSLH         &kp BSLH
 &trans   &trans          &kp LCTRL      &kp LALT       &kp LGUI                                    &kp LBKT        &kp RBKT       &kp GRAVE      &trans           &trans
                                                         &kp F1          &kp F2  &kp F12    &mkp LCLK &mkp RCLK      &kp F3
-                                                        &kp F3          &kp LGUI &kp SPACE  &fn_lt_enter 0 ENTER  &num_lt 1 BSPC  &mouse_lt_enter 0 0
+                                                        &kp LGUI        &kp SPACE &kp F3    &mouse_lt_enter 0 0  &fn_lt_enter 0 ENTER  &num_lt 1 BSPC
             >;
         };
 
@@ -210,7 +210,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans              &trans          &trans          &trans  &trans          &trans    &trans
 &trans  &trans  &trans  &trans  &trans                                      &trans          &trans  &trans          &trans    &trans
                                 &trans  &trans  &trans      &trans          &trans          &trans
-                                &trans  &trans  &trans      &kp ENTER       &kp BSPC        &mouse_lt_exit 0 0
+                                &trans  &trans  &trans      &mouse_lt_exit 0 0  &kp ENTER   &kp BSPC
             >;
         };
 

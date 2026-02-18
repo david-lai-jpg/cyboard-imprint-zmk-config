@@ -77,12 +77,12 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-right-click-outline$$
   - F3
-  - F3
   - LGUI
   - $$mdi:keyboard-space$$
+  - F3
+  - {t: '&mouse_tog_enter', h: '&fn_layer_color'}
   - {t: '$$mdi:keyboard-return$$', h: '&sym_layer_color'}
   - {t: '$$mdi:backspace$$', h: NUMBER}
-  - {t: '&mouse_tog_enter', h: '&fn_layer_color'}
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -164,8 +164,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   FN:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -329,9 +329,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '&mouse_tog_exit', h: '&sym_layer_color'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '&mouse_tog_exit', h: '&sym_layer_color'}
   SYMBOLS:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
