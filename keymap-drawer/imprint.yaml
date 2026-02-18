@@ -190,7 +190,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - BT CLR ALL
   - $$mdi:keyboard-esc$$
   - F13
   - F7
