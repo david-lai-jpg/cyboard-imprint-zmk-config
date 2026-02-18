@@ -1,6 +1,6 @@
 # Cyboard Imprint ZMK Configuration
 
-Personal [ZMK](https://zmk.dev/) firmware configuration for the [Cyboard Imprint](https://cyboard.digital/) wireless split keyboard, built on the Assimilator-BT controller. Keymap ported from a [ZMK Corne](https://github.com/caksoylar/keymap-drawer) configuration with home row mods, tap-dance, and mod-morphs.
+Personal [ZMK](https://zmk.dev/) firmware configuration for the [Cyboard Imprint](https://cyboard.digital/) wireless split keyboard, built on the Assimilator-BT controller. Features home row mods, tap-dance, mod-morphs, and dual trackball support.
 
 ## Key Positions
 
@@ -22,16 +22,16 @@ Personal [ZMK](https://zmk.dev/) firmware configuration for the [Cyboard Imprint
 
 ## Layout
 
-The Corne's 42 keys are mapped to the Imprint's middle 3 rows and bottom thumb cluster. The function row, number row, edge keys, and upper thumb keys are transparent.
+42 keys are active across the middle 3 rows and bottom thumb cluster. The function row, number row, edge keys, and upper thumb keys are transparent.
 
 ```
 Rows 0-1 (pos 0-23):   transparent (function + number rows)
-Row 2 (pos 24-35):      Corne row 0 (TAB, QWERTY top, =)
-Row 3 (pos 36-47):      Corne row 1 (home row mods, ASDFG/HJKL;')
-Row 4 (pos 48-59):      Corne row 2 (CTRL, ZXCVB/NM,./)
+Row 2 (pos 24-35):      top alpha row (TAB, QWERTY, =)
+Row 3 (pos 36-47):      home row (mods on ASDF / HJKL;')
+Row 4 (pos 48-59):      bottom alpha row (CTRL, ZXCVB / NM,./)
 Row 5 (pos 60-69):      transparent (edge keys)
 Row 6 (pos 70-75):      transparent (upper thumb cluster)
-Row 7 (pos 76-81):      Corne thumbs (ALT/GUI/SPACE | ENTER/BSPC/MOUSE)
+Row 7 (pos 76-81):      thumb keys (ALT/GUI/SPACE | ENTER/BSPC/MOUSE)
 ```
 
 ## Features
