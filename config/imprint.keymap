@@ -167,8 +167,8 @@
 &td0     &hml LCTRL A    &hml LALT S    &hml LGUI D    &hml LSHFT F    &kp G               &kp H   &hmr RSHFT J    &hmr RGUI K    &hmr RALT L    &hmr RCTRL SEMI  &kp SQT
 &kp LCTRL &kp Z          &kp X          &kp C          &kp V           &kp B               &kp N   &kp M           &kp COMMA      &kp DOT        &kp FSLH         &kp BSLH
 &trans   &kp LCTRL       &kp LGUI       &kp LALT       &trans                                      &trans          &kp LBKT       &kp RBKT       &kp GRAVE        &trans
-                                                        &kp F1          &kp F2  &kp F12    &mkp LCLK &mkp RCLK      &kp F3
-                                                        &kp LALT        &kp LGUI &kp SPACE  &fn_lt_enter 0 ENTER  &num_lt 1 BSPC  &mouse_lt_enter 0 0
+                                                        &kp F1          &kp F2  &kp F3     &mkp LCLK &mkp RCLK      &kp F3
+                                                        &kp LGUI        &kp SPACE &kp F12   &fn_lt_enter 0 ENTER  &num_lt 1 BSPC  &mouse_lt_enter 0 0
             >;
         };
 
