@@ -14,24 +14,26 @@ Personal [ZMK](https://zmk.dev/) firmware configuration for the [Cyboard Imprint
 
 | Layer | Name | Activation | Description |
 |-------|------|------------|-------------|
-| 0 | BASE | Default | QWERTY with home row mods (CTRL/ALT/GUI/SHIFT), tap-dance shift/caps lock |
+| 0 | BASE | Default | QWERTY with number row, home row mods (CTRL/ALT/GUI/SHIFT), tap-dance shift/caps lock, mouse buttons on upper right thumb |
 | 1 | NUMBER | `num_lt` hold (right thumb) | Left-hand numpad (7-8-9 / 4-5-6 / 1-2-3), right-hand arrow navigation, bracket mod-morphs |
-| 2 | FN | `mouse_lt_enter` hold (right thumb) | Function keys (F1-F13), RGB underglow toggle/effect, arrow navigation |
+| 2 | FN | `mouse_lt_enter` hold (right thumb) | Bluetooth profile selection (5 slots + clear), function keys (F1-F13), RGB underglow toggle/effect, arrow navigation |
 | 3 | MOUSELESS | `mouse_lt_enter` tap (right thumb) | Home row letter keys (ASDF/JKL;), macOS screenshot shortcuts, toggle exit |
 | 4 | SYMBOLS | `fn_lt_enter` hold (right thumb) | Symbols (&*()$%^!@#), arrow navigation, bracket mod-morphs |
 
 ## Layout
 
-42 keys are active across the middle 3 rows and bottom thumb cluster. The function row, number row, edge keys, and upper thumb keys are transparent.
-
 ```
-Rows 0-1 (pos 0-23):   transparent (function + number rows)
-Row 2 (pos 24-35):      top alpha row (TAB, QWERTY, =)
-Row 3 (pos 36-47):      home row (mods on ASDF / HJKL;')
-Row 4 (pos 48-59):      bottom alpha row (CTRL, ZXCVB / NM,./)
-Row 5 (pos 60-69):      transparent (edge keys)
-Row 6 (pos 70-75):      transparent (upper thumb cluster)
-Row 7 (pos 76-81):      thumb keys (ALT/GUI/SPACE | ENTER/BSPC/MOUSE)
+Row 0 (pos 0-11):       transparent
+Row 1 (pos 12-23):      ESC, number row (1-0), minus
+Row 2 (pos 24-35):      TAB, QWERTY top row, =
+Row 3 (pos 36-47):      home row with mods (ASDFG / HJKL;')
+Row 4 (pos 48-59):      CTRL, ZXCVB / NM,./ backslash
+Row 5 (pos 60-64 L):    transparent, LCTRL, LGUI, LALT, transparent
+Row 5 (pos 65-69 R):    transparent, [{, ]}, `~, transparent
+Row 6 (pos 70-72 L):    F1, F2, F12 (upper thumb)
+Row 6 (pos 73-75 R):    Mouse L-click, Mouse R-click, F3 (upper thumb)
+Row 7 (pos 76-78 L):    LALT, LGUI, SPACE (lower thumb)
+Row 7 (pos 79-81 R):    ENTER/SYMBOLS, BSPC/NUMBER, MOUSE toggle (lower thumb)
 ```
 
 ## Features
@@ -40,14 +42,16 @@ Row 7 (pos 76-81):      thumb keys (ALT/GUI/SPACE | ENTER/BSPC/MOUSE)
 - **Tap-dance** -- single-tap for Shift, double-tap for Caps Lock
 - **Mod-morphs** -- `{` / `[` and `}` / `]` toggled by holding Shift
 - **Layer macros** -- `fn_layer_color` and `sym_layer_color` for momentary layer activation, `mouse_tog_enter`/`mouse_tog_exit` for toggling the mouse layer
+- **Bluetooth** -- 5 profile slots (BT_SEL 0-4) and BT_CLR on the FN layer number row
+- **Mouse buttons** -- left-click and right-click on upper right thumb cluster (pos 73-74)
 - **RGB underglow** -- toggle and effect cycling on the FN layer
-- **Dual trackballs** -- left trackball for scrolling (sensitivity 1/3, Y-inverted), right trackball for cursor movement
+- **Dual trackballs** -- left trackball for scrolling (sensitivity 1/2, Y-inverted), right trackball for cursor movement
 - **Split wireless** via Bluetooth (Assimilator-BT board)
 
 ## Trackball Configuration
 
 The left trackball is configured as a scroll wheel:
-- Sensitivity scaled down (1/3) for comfortable scrolling
+- Sensitivity scaled to 1/2 via `zip_xy_scaler`
 - Y-axis inverted so the view follows the trackball direction
 
 The right trackball operates as a cursor with default settings. Auto-layer activation (layer 3 on movement) is commented out but ready to enable.
